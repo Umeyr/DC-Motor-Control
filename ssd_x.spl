@@ -1,0 +1,5 @@
+[Inputs]
+clock1kHz
+[Outputs]
+=x[3:0]=
+[BiDir]

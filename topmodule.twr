@@ -1,0 +1,100 @@
+--------------------------------------------------------------------------------
+Release 12.4 Trace  (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\12.4\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml topmodule.twx topmodule.ncd -o topmodule.twr topmodule.pcf
+-ucf pins.ucf
+
+Design file:              topmodule.ncd
+Physical constraint file: topmodule.pcf
+Device,package,speed:     xc3s100e,cp132,-5 (PRODUCTION 1.27 2010-11-18)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clock to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+clock1Hzs   |    7.013(R)|clock_BUFGP       |   0.000|
+clock1kHz   |    8.462(R)|clock_BUFGP       |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    4.714|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+temperature<0> |mot_test       |    9.318|
+temperature<0> |motor          |   10.539|
+temperature<0> |motor2         |    8.814|
+temperature<1> |mot_test       |    8.564|
+temperature<1> |motor          |    9.785|
+temperature<1> |motor2         |    7.895|
+temperature<2> |mot_test       |    7.832|
+temperature<2> |motor          |    9.053|
+temperature<2> |motor2         |    8.046|
+temperature<3> |mot_test       |    7.653|
+temperature<3> |motor          |    8.874|
+temperature<3> |motor2         |    7.716|
+temperature<4> |mot_test       |    7.607|
+temperature<4> |motor          |    8.828|
+temperature<4> |motor2         |    7.404|
+temperature<5> |mot_test       |    6.039|
+temperature<5> |motor          |    7.260|
+temperature<5> |motor2         |    6.671|
+temperature<6> |mot_test       |    6.068|
+temperature<6> |motor          |    7.289|
+temperature<6> |motor2         |    6.567|
+temperature<7> |mot_test       |    6.896|
+temperature<7> |motor          |    8.117|
+temperature<7> |motor2         |    7.846|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Nov 05 20:00:49 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 152 MB
+
+
+

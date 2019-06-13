@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ssd_x.vhd -prj projeson -o ssd_x.spl -module ssd_x -template C:/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ssd_x.spl {C:/Users/Yunus/Desktop/proje sonk/projeson/ssd_x.sym} 

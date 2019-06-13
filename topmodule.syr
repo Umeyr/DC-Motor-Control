@@ -1,0 +1,763 @@
+Release 12.4 - xst M.81d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.38 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.38 secs
+ 
+--> Reading design: topmodule.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "topmodule.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "topmodule"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-cp132
+
+---- Source Options
+Top Module Name                    : topmodule
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/topmodule is now defined in a different file.  It was defined in "C:/Users/Yunus/Desktop/proje sonk/projeson/topmodule.vhd", and is now defined in "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/topmodule.vhd".
+WARNING:HDLParsers:3607 - Unit work/topmodule/Behavioral is now defined in a different file.  It was defined in "C:/Users/Yunus/Desktop/proje sonk/projeson/topmodule.vhd", and is now defined in "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/topmodule.vhd".
+WARNING:HDLParsers:3607 - Unit work/buzzer is now defined in a different file.  It was defined in "C:/Users/Yunus/Desktop/proje sonk/projeson/buzzer.vhd", and is now defined in "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/buzzer.vhd".
+WARNING:HDLParsers:3607 - Unit work/buzzer/Behavioral is now defined in a different file.  It was defined in "C:/Users/Yunus/Desktop/proje sonk/projeson/buzzer.vhd", and is now defined in "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/buzzer.vhd".
+WARNING:HDLParsers:3607 - Unit work/clock1Hz is now defined in a different file.  It was defined in "C:/Users/Yunus/Desktop/proje sonk/projeson/clock1Hz.vhd", and is now defined in "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/clock1Hz.vhd".
+WARNING:HDLParsers:3607 - Unit work/clock1Hz/Behavioral is now defined in a different file.  It was defined in "C:/Users/Yunus/Desktop/proje sonk/projeson/clock1Hz.vhd", and is now defined in "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/clock1Hz.vhd".
+WARNING:HDLParsers:3607 - Unit work/motor2_control is now defined in a different file.  It was defined in "C:/Users/Yunus/Desktop/proje sonk/projeson/motor2_control.vhd", and is now defined in "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/motor2_control.vhd".
+WARNING:HDLParsers:3607 - Unit work/motor2_control/Behavioral is now defined in a different file.  It was defined in "C:/Users/Yunus/Desktop/proje sonk/projeson/motor2_control.vhd", and is now defined in "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/motor2_control.vhd".
+WARNING:HDLParsers:3607 - Unit work/motor_control is now defined in a different file.  It was defined in "C:/Users/Yunus/Desktop/proje sonk/projeson/motor_control.vhd", and is now defined in "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/motor_control.vhd".
+WARNING:HDLParsers:3607 - Unit work/motor_control/Behavioral is now defined in a different file.  It was defined in "C:/Users/Yunus/Desktop/proje sonk/projeson/motor_control.vhd", and is now defined in "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/motor_control.vhd".
+WARNING:HDLParsers:3607 - Unit work/ssd_display is now defined in a different file.  It was defined in "C:/Users/Yunus/Desktop/proje sonk/projeson/ssd_display.vhd", and is now defined in "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_display.vhd".
+WARNING:HDLParsers:3607 - Unit work/ssd_display/Behavioral is now defined in a different file.  It was defined in "C:/Users/Yunus/Desktop/proje sonk/projeson/ssd_display.vhd", and is now defined in "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_display.vhd".
+WARNING:HDLParsers:3607 - Unit work/ssd_x is now defined in a different file.  It was defined in "C:/Users/Yunus/Desktop/proje sonk/projeson/ssd_x.vhd", and is now defined in "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_x.vhd".
+WARNING:HDLParsers:3607 - Unit work/ssd_x/Behavioral is now defined in a different file.  It was defined in "C:/Users/Yunus/Desktop/proje sonk/projeson/ssd_x.vhd", and is now defined in "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_x.vhd".
+WARNING:HDLParsers:3607 - Unit work/temp_clock is now defined in a different file.  It was defined in "C:/Users/Yunus/Desktop/proje sonk/projeson/temp_clock.vhd", and is now defined in "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/temp_clock.vhd".
+WARNING:HDLParsers:3607 - Unit work/temp_clock/Behavioral is now defined in a different file.  It was defined in "C:/Users/Yunus/Desktop/proje sonk/projeson/temp_clock.vhd", and is now defined in "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/temp_clock.vhd".
+Compiling vhdl file "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/temp_clock.vhd" in Library work.
+Architecture behavioral of Entity temp_clock is up to date.
+Compiling vhdl file "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_x.vhd" in Library work.
+Architecture behavioral of Entity ssd_x is up to date.
+Compiling vhdl file "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/clock1Hz.vhd" in Library work.
+Architecture behavioral of Entity clock1hz is up to date.
+Compiling vhdl file "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/buzzer.vhd" in Library work.
+Architecture behavioral of Entity buzzer is up to date.
+Compiling vhdl file "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/motor_control.vhd" in Library work.
+Entity <motor_control> compiled.
+Entity <motor_control> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_display.vhd" in Library work.
+Architecture behavioral of Entity ssd_display is up to date.
+Compiling vhdl file "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/motor2_control.vhd" in Library work.
+Architecture behavioral of Entity motor2_control is up to date.
+Compiling vhdl file "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/topmodule.vhd" in Library work.
+Architecture behavioral of Entity topmodule is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <topmodule> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <temp_clock> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ssd_x> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clock1Hz> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <buzzer> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <motor_control> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ssd_display> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <motor2_control> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <topmodule> in library <work> (Architecture <behavioral>).
+Entity <topmodule> analyzed. Unit <topmodule> generated.
+
+Analyzing Entity <temp_clock> in library <work> (Architecture <behavioral>).
+Entity <temp_clock> analyzed. Unit <temp_clock> generated.
+
+Analyzing Entity <ssd_x> in library <work> (Architecture <behavioral>).
+Entity <ssd_x> analyzed. Unit <ssd_x> generated.
+
+Analyzing Entity <clock1Hz> in library <work> (Architecture <behavioral>).
+Entity <clock1Hz> analyzed. Unit <clock1Hz> generated.
+
+Analyzing Entity <buzzer> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/buzzer.vhd" line 27: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <a>, <b>
+Entity <buzzer> analyzed. Unit <buzzer> generated.
+
+Analyzing Entity <motor_control> in library <work> (Architecture <behavioral>).
+Entity <motor_control> analyzed. Unit <motor_control> generated.
+
+Analyzing Entity <ssd_display> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_display.vhd" line 36: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <a>
+WARNING:Xst:819 - "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_display.vhd" line 80: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <d>, <b>
+Entity <ssd_display> analyzed. Unit <ssd_display> generated.
+
+Analyzing Entity <motor2_control> in library <work> (Architecture <behavioral>).
+Entity <motor2_control> analyzed. Unit <motor2_control> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <temp_clock>.
+    Related source file is "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/temp_clock.vhd".
+    Found 32-bit up counter for signal <divider>.
+    Found 1-bit register for signal <temp_clock1kHz>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <temp_clock> synthesized.
+
+
+Synthesizing Unit <ssd_x>.
+    Related source file is "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_x.vhd".
+    Found 4-bit register for signal <temp_x>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <ssd_x> synthesized.
+
+
+Synthesizing Unit <clock1Hz>.
+    Related source file is "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/clock1Hz.vhd".
+    Found 32-bit up counter for signal <divider1Hz>.
+    Found 1-bit register for signal <temp_clock1Hz>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <clock1Hz> synthesized.
+
+
+Synthesizing Unit <buzzer>.
+    Related source file is "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/buzzer.vhd".
+    Found 1-bit register for signal <a>.
+    Found 1-bit register for signal <b>.
+    Found 1-bit xor2 for signal <buz_test$xor0000> created at line 37.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <buzzer> synthesized.
+
+
+Synthesizing Unit <motor_control>.
+    Related source file is "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/motor_control.vhd".
+WARNING:Xst:647 - Input <clock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found finite state machine <FSM_0> for signal <k>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 2                                              |
+    | Clock              | temp_clock                (rising_edge)        |
+    | Clock enable       | k$not0000                 (positive)           |
+    | Power Up State     | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit comparator greatequal for signal <k$cmp_ge0000> created at line 64.
+    Found 8-bit comparator greatequal for signal <k$cmp_ge0001> created at line 52.
+    Found 8-bit comparator less for signal <k$cmp_lt0000> created at line 79.
+    Found 8-bit comparator less for signal <k$cmp_lt0001> created at line 52.
+    Found 1-bit register for signal <temp_clockmot>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+Unit <motor_control> synthesized.
+
+
+Synthesizing Unit <ssd_display>.
+    Related source file is "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_display.vhd".
+WARNING:Xst:647 - Input <clock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:643 - "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_display.vhd" line 76: The result of a 4x4-bit multiplication is partially used. Only the 7 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 16x7-bit ROM for signal <ssd$mux0003>.
+WARNING:Xst:737 - Found 7-bit latch for signal <ssd>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 4-bit latch for signal <ssd_an>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 8-bit comparator greater for signal <b$cmp_gt0000> created at line 42.
+    Found 8-bit comparator greater for signal <b$cmp_gt0001> created at line 43.
+    Found 8-bit comparator greater for signal <b$cmp_gt0002> created at line 46.
+    Found 8-bit comparator greater for signal <b$cmp_gt0003> created at line 49.
+    Found 8-bit comparator greater for signal <b$cmp_gt0004> created at line 52.
+    Found 8-bit comparator greater for signal <b$cmp_gt0005> created at line 55.
+    Found 8-bit comparator greater for signal <b$cmp_gt0006> created at line 58.
+    Found 8-bit comparator greater for signal <b$cmp_gt0007> created at line 61.
+    Found 8-bit comparator greater for signal <b$cmp_gt0008> created at line 64.
+    Found 9-bit subtractor for signal <d>.
+    Found 4x4-bit multiplier for signal <mult0000$mult0000> created at line 76.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   9 Comparator(s).
+Unit <ssd_display> synthesized.
+
+
+Synthesizing Unit <motor2_control>.
+    Related source file is "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/motor2_control.vhd".
+    Found 8-bit comparator greatequal for signal <motor2$cmp_ge0000> created at line 27.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <motor2_control> synthesized.
+
+
+Synthesizing Unit <topmodule>.
+    Related source file is "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/topmodule.vhd".
+Unit <topmodule> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Multipliers                                          : 1
+ 4x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 6
+ 1-bit register                                        : 5
+ 4-bit register                                        : 1
+# Latches                                              : 2
+ 4-bit latch                                           : 1
+ 7-bit latch                                           : 1
+# Comparators                                          : 14
+ 8-bit comparator greatequal                           : 3
+ 8-bit comparator greater                              : 9
+ 8-bit comparator less                                 : 2
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <u5/k/FSM> on signal <k[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+INFO:Xst:2261 - The FF/Latch <temp_x_2> in Unit <u2> is equivalent to the following FF/Latch, which will be removed : <temp_x_3> 
+WARNING:Xst:1293 - FF/Latch <temp_x_2> has a constant value of 1 in block <u2>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Multipliers                                          : 1
+ 4x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+# Latches                                              : 2
+ 4-bit latch                                           : 1
+ 7-bit latch                                           : 1
+# Comparators                                          : 14
+ 8-bit comparator greatequal                           : 3
+ 8-bit comparator greater                              : 9
+ 8-bit comparator less                                 : 2
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <temp_x_3> has a constant value of 1 in block <ssd_x>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <temp_x_2> has a constant value of 1 in block <ssd_x>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <ssd_an_2> in Unit <ssd_display> is equivalent to the following FF/Latch, which will be removed : <ssd_an_3> 
+
+Optimizing unit <topmodule> ...
+
+Optimizing unit <motor_control> ...
+
+Optimizing unit <ssd_display> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block topmodule, actual ratio is 9.
+Latch u6/ssd_an_2 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 73
+ Flip-Flops                                            : 73
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : topmodule.ngr
+Top Level Output File Name         : topmodule
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 30
+
+Cell Usage :
+# BELS                             : 317
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 62
+#      LUT2                        : 13
+#      LUT3                        : 5
+#      LUT4                        : 66
+#      LUT4_L                      : 1
+#      MUXCY                       : 85
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 72
+# FlipFlops/Latches                : 84
+#      FD                          : 1
+#      FD_1                        : 1
+#      FDE                         : 5
+#      FDR                         : 65
+#      FDS                         : 1
+#      LD                          : 11
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 29
+#      IBUF                        : 8
+#      OBUF                        : 21
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-5 
+
+ Number of Slices:                       80  out of    960     8%  
+ Number of Slice Flip Flops:             73  out of   1920     3%  
+ Number of 4 input LUTs:                154  out of   1920     8%  
+ Number of IOs:                          30
+ Number of bonded IOBs:                  30  out of     83    36%  
+    IOB Flip Flops:                      11
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------+------------------------+-------+
+Clock Signal                                 | Clock buffer(FF name)  | Load  |
+---------------------------------------------+------------------------+-------+
+clock                                        | BUFGP                  | 66    |
+u3/temp_clock1Hz                             | NONE(u4/b)             | 2     |
+u1/temp_clock1kHz                            | NONE(u5/k_FSM_FFd1)    | 5     |
+u6/ssd_an_mux0001<2>(u6/ssd_an_mux0001<2>1:O)| NONE(*)(u6/ssd_6)      | 11    |
+---------------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.528ns (Maximum Frequency: 220.868MHz)
+   Minimum input arrival time before clock: 13.623ns
+   Maximum output required time after clock: 5.161ns
+   Maximum combinational path delay: 9.393ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 4.528ns (frequency: 220.868MHz)
+  Total number of paths / destination ports: 3170 / 132
+-------------------------------------------------------------------------
+Delay:               4.528ns (Levels of Logic = 9)
+  Source:            u3/divider1Hz_8 (FF)
+  Destination:       u3/divider1Hz_0 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: u3/divider1Hz_8 to u3/divider1Hz_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.514   0.532  u3/divider1Hz_8 (u3/divider1Hz_8)
+     LUT4:I0->O            1   0.612   0.000  u3/divider1Hz_cmp_eq0000_wg_lut<0> (u3/divider1Hz_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  u3/divider1Hz_cmp_eq0000_wg_cy<0> (u3/divider1Hz_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  u3/divider1Hz_cmp_eq0000_wg_cy<1> (u3/divider1Hz_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  u3/divider1Hz_cmp_eq0000_wg_cy<2> (u3/divider1Hz_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  u3/divider1Hz_cmp_eq0000_wg_cy<3> (u3/divider1Hz_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  u3/divider1Hz_cmp_eq0000_wg_cy<4> (u3/divider1Hz_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  u3/divider1Hz_cmp_eq0000_wg_cy<5> (u3/divider1Hz_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  u3/divider1Hz_cmp_eq0000_wg_cy<6> (u3/divider1Hz_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O          33   0.289   1.073  u3/divider1Hz_cmp_eq0000_wg_cy<7> (u3/divider1Hz_cmp_eq0000)
+     FDR:R                     0.795          u3/divider1Hz_0
+    ----------------------------------------
+    Total                      4.528ns (2.923ns logic, 1.605ns route)
+                                       (64.5% logic, 35.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'u1/temp_clock1kHz'
+  Clock period: 3.530ns (frequency: 283.290MHz)
+  Total number of paths / destination ports: 8 / 7
+-------------------------------------------------------------------------
+Delay:               3.530ns (Levels of Logic = 3)
+  Source:            u5/k_FSM_FFd1 (FF)
+  Destination:       u5/temp_clockmot (FF)
+  Source Clock:      u1/temp_clock1kHz rising
+  Destination Clock: u1/temp_clock1kHz rising
+
+  Data Path: u5/k_FSM_FFd1 to u5/temp_clockmot
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.514   0.383  u5/k_FSM_FFd1 (u5/k_FSM_FFd1)
+     LUT4_L:I3->LO         1   0.612   0.103  u5/temp_clockmot_mux000080 (u5/temp_clockmot_mux000080)
+     LUT4:I3->O            1   0.612   0.426  u5/temp_clockmot_mux0000130 (u5/temp_clockmot_mux0000130)
+     LUT2:I1->O            1   0.612   0.000  u5/temp_clockmot_mux0000143 (u5/temp_clockmot_mux0000)
+     FDE:D                     0.268          u5/temp_clockmot
+    ----------------------------------------
+    Total                      3.530ns (2.618ns logic, 0.912ns route)
+                                       (74.2% logic, 25.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u3/temp_clock1Hz'
+  Total number of paths / destination ports: 16 / 2
+-------------------------------------------------------------------------
+Offset:              4.955ns (Levels of Logic = 4)
+  Source:            temperature<0> (PAD)
+  Destination:       u4/b (FF)
+  Destination Clock: u3/temp_clock1Hz falling
+
+  Data Path: temperature<0> to u4/b
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   1.106   1.002  temperature_0_IBUF (temperature_0_IBUF)
+     LUT2:I0->O            2   0.612   0.383  u5/temp_clockmot_mux000011 (u5/N01)
+     LUT4:I3->O            1   0.612   0.360  u5/mot_test111_SW0 (N16)
+     LUT4:I3->O            4   0.612   0.000  u5/mot_test111 (mot_test_OBUF)
+     FD_1:D                    0.268          u4/b
+    ----------------------------------------
+    Total                      4.955ns (3.210ns logic, 1.745ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u1/temp_clock1kHz'
+  Total number of paths / destination ports: 48 / 4
+-------------------------------------------------------------------------
+Offset:              5.648ns (Levels of Logic = 4)
+  Source:            temperature<0> (PAD)
+  Destination:       u5/k_FSM_FFd1 (FF)
+  Destination Clock: u1/temp_clock1kHz rising
+
+  Data Path: temperature<0> to u5/k_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   1.106   1.002  temperature_0_IBUF (temperature_0_IBUF)
+     LUT2:I0->O            2   0.612   0.410  u5/temp_clockmot_mux000011 (u5/N01)
+     LUT4:I2->O            1   0.612   0.360  u5/k_not0001_SW0 (N11)
+     LUT4:I3->O            3   0.612   0.451  u5/k_not0001 (u5/k_not0001)
+     FDE:CE                    0.483          u5/temp_clockmot
+    ----------------------------------------
+    Total                      5.648ns (3.425ns logic, 2.223ns route)
+                                       (60.6% logic, 39.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u6/ssd_an_mux0001<2>'
+  Total number of paths / destination ports: 6777 / 7
+-------------------------------------------------------------------------
+Offset:              13.623ns (Levels of Logic = 15)
+  Source:            temperature<2> (PAD)
+  Destination:       u6/ssd_5 (LATCH)
+  Destination Clock: u6/ssd_an_mux0001<2> falling
+
+  Data Path: temperature<2> to u6/ssd_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   1.106   0.969  temperature_2_IBUF (temperature_2_IBUF)
+     LUT3:I0->O            1   0.612   0.509  u6/b<0>16_SW0 (N20)
+     LUT4:I0->O            2   0.612   0.532  u6/b<0>16 (u6/b<0>16)
+     LUT3:I0->O           11   0.612   0.945  u6/b<0>144 (u6/b<0>)
+     LUT3:I0->O            1   0.612   0.360  u6/Msub_d_lut<4>_SW0 (N32)
+     LUT4:I3->O            1   0.612   0.000  u6/Msub_d_lut<4> (u6/Msub_d_lut<4>)
+     MUXCY:S->O            1   0.404   0.000  u6/Msub_d_cy<4> (u6/Msub_d_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  u6/Msub_d_cy<5> (u6/Msub_d_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  u6/Msub_d_cy<6> (u6/Msub_d_cy<6>)
+     XORCY:CI->O           1   0.699   0.509  u6/Msub_d_xor<7> (u6/d<7>)
+     LUT4:I0->O            1   0.612   0.000  u6/ssd_and00011 (u6/ssd_and00011)
+     MUXF5:I0->O           5   0.278   0.541  u6/ssd_and0001_f5 (u6/ssd_and0001)
+     LUT4:I3->O            2   0.612   0.383  u6/ssd_mux0004<4>212 (u6/N22)
+     LUT4:I3->O            1   0.612   0.509  u6/ssd_mux0004<4>33_SW0 (N26)
+     LUT4:I0->O            1   0.612   0.000  u6/ssd_mux0004<4>33 (u6/ssd_mux0004<4>)
+     LD:D                      0.268          u6/ssd_4
+    ----------------------------------------
+    Total                     13.623ns (8.366ns logic, 5.257ns route)
+                                       (61.4% logic, 38.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.285ns (Levels of Logic = 1)
+  Source:            u1/temp_clock1kHz (FF)
+  Destination:       clock1kHz (PAD)
+  Source Clock:      clock rising
+
+  Data Path: u1/temp_clock1kHz to clock1kHz
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              7   0.514   0.602  u1/temp_clock1kHz (u1/temp_clock1kHz)
+     OBUF:I->O                 3.169          clock1kHz_OBUF (clock1kHz)
+    ----------------------------------------
+    Total                      4.285ns (3.683ns logic, 0.602ns route)
+                                       (86.0% logic, 14.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u3/temp_clock1Hz'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.161ns (Levels of Logic = 2)
+  Source:            u4/b (FF)
+  Destination:       buz (PAD)
+  Source Clock:      u3/temp_clock1Hz falling
+
+  Data Path: u4/b to buz
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             1   0.514   0.509  u4/b (u4/b)
+     LUT2:I0->O            1   0.612   0.357  u4/Mxor_buz_test_xor0000_Result1 (buz_OBUF)
+     OBUF:I->O                 3.169          buz_OBUF (buz)
+    ----------------------------------------
+    Total                      5.161ns (4.295ns logic, 0.866ns route)
+                                       (83.2% logic, 16.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u1/temp_clock1kHz'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              5.161ns (Levels of Logic = 2)
+  Source:            u5/temp_clockmot (FF)
+  Destination:       motor (PAD)
+  Source Clock:      u1/temp_clock1kHz rising
+
+  Data Path: u5/temp_clockmot to motor
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.514   0.509  u5/temp_clockmot (u5/temp_clockmot)
+     LUT2:I0->O            1   0.612   0.357  u5/motor1 (motor_OBUF)
+     OBUF:I->O                 3.169          motor_OBUF (motor)
+    ----------------------------------------
+    Total                      5.161ns (4.295ns logic, 0.866ns route)
+                                       (83.2% logic, 16.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u6/ssd_an_mux0001<2>'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              4.114ns (Levels of Logic = 1)
+  Source:            u6/ssd_an_2_1 (LATCH)
+  Destination:       ssd_an<3> (PAD)
+  Source Clock:      u6/ssd_an_mux0001<2> falling
+
+  Data Path: u6/ssd_an_2_1 to ssd_an<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.357  u6/ssd_an_2_1 (u6/ssd_an_2_1)
+     OBUF:I->O                 3.169          ssd_an_3_OBUF (ssd_an<3>)
+    ----------------------------------------
+    Total                      4.114ns (3.757ns logic, 0.357ns route)
+                                       (91.3% logic, 8.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 24 / 3
+-------------------------------------------------------------------------
+Delay:               9.393ns (Levels of Logic = 6)
+  Source:            temperature<0> (PAD)
+  Destination:       motor (PAD)
+
+  Data Path: temperature<0> to motor
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   1.106   1.002  temperature_0_IBUF (temperature_0_IBUF)
+     LUT2:I0->O            2   0.612   0.383  u5/temp_clockmot_mux000011 (u5/N01)
+     LUT4:I3->O            1   0.612   0.360  u5/mot_test111_SW0 (N16)
+     LUT4:I3->O            4   0.612   0.568  u5/mot_test111 (mot_test_OBUF)
+     LUT2:I1->O            1   0.612   0.357  u5/motor1 (motor_OBUF)
+     OBUF:I->O                 3.169          motor_OBUF (motor)
+    ----------------------------------------
+    Total                      9.393ns (6.723ns logic, 2.670ns route)
+                                       (71.6% logic, 28.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.74 secs
+ 
+--> 
+
+Total memory usage is 254436 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   27 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

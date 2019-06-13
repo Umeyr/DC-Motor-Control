@@ -1,0 +1,31 @@
+NET "ssd<6>" LOC = "l14" ;
+NET "ssd<5>" LOC = "h12" ;
+NET "ssd<4>" LOC = "n14" ;
+NET "ssd<3>" LOC = "n11" ;
+NET "ssd<2>" LOC = "p12" ;
+NET "ssd<1>" LOC = "l13" ;
+NET "ssd<0>" LOC = "m12" ; 
+
+NET "ssd_an<3>" LOC = "k14";
+NET "ssd_an<2>" LOC = "m13";
+NET "ssd_an<1>" LOC = "j12";
+NET "ssd_an<0>" LOC = "f12"; 
+
+NET "temperature<7>" LOC = "N3";
+NET "temperature<6>" LOC = "E2";
+NET "temperature<5>" LOC = "F3";
+NET "temperature<4>" LOC = "G3";
+NET "temperature<3>" LOC = "B4";
+NET "temperature<2>" LOC = "K3";
+NET "temperature<1>" LOC = "L3";
+NET "temperature<0>" LOC = "P11";
+
+
+
+NET "buz" LOC = "C6";
+NET "motor" LOC = "b6";
+NET "motor2" LOC = "c5";
+
+
+NET "clock1Hzs" LOC = "b5";
+NET "clock" LOC = "b8"; 

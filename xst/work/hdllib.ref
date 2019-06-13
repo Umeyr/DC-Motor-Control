@@ -1,0 +1,16 @@
+AR ssd_x behavioral "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_x.vhd" sub00/vhpl05 1477400640
+AR ssd_display behavioral "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_display.vhd" sub00/vhpl13 1477400648
+AR motor2_control behavioral "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/motor2_control.vhd" sub00/vhpl15 1477400650
+AR topmodule behavioral "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/topmodule.vhd" sub00/vhpl01 1477400652
+EN temp_clock NULL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/temp_clock.vhd" sub00/vhpl02 1477400637
+AR motor_control behavioral "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/motor_control.vhd" sub00/vhpl11 1477400646
+AR temp_clock behavioral "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/temp_clock.vhd" sub00/vhpl03 1477400638
+EN motor_control NULL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/motor_control.vhd" sub00/vhpl10 1477400645
+AR clock1hz behavioral "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/clock1Hz.vhd" sub00/vhpl07 1477400642
+AR buzzer behavioral "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/buzzer.vhd" sub00/vhpl09 1477400644
+EN motor2_control NULL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/motor2_control.vhd" sub00/vhpl14 1477400649
+EN ssd_display NULL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_display.vhd" sub00/vhpl12 1477400647
+EN buzzer NULL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/buzzer.vhd" sub00/vhpl08 1477400643
+EN topmodule NULL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/topmodule.vhd" sub00/vhpl00 1477400651
+EN clock1hz NULL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/clock1Hz.vhd" sub00/vhpl06 1477400641
+EN ssd_x NULL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_x.vhd" sub00/vhpl04 1477400639

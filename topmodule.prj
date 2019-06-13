@@ -1,0 +1,8 @@
+vhdl work "temp_clock.vhd"
+vhdl work "ssd_x.vhd"
+vhdl work "ssd_display.vhd"
+vhdl work "motor_control.vhd"
+vhdl work "motor2_control.vhd"
+vhdl work "clock1Hz.vhd"
+vhdl work "buzzer.vhd"
+vhdl work "topmodule.vhd"

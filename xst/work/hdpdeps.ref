@@ -1,0 +1,67 @@
+V3 39
+FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/buzzer.vhd" 2015/12/14.03:15:14 M.81d
+EN work/buzzer 1477400643 \
+      FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/buzzer.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/buzzer/Behavioral 1477400644 \
+      FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/buzzer.vhd" \
+      EN work/buzzer 1477400643
+FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/clock1Hz.vhd" 2015/12/14.00:48:24 M.81d
+EN work/clock1Hz 1477400641 \
+      FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/clock1Hz.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/clock1Hz/Behavioral 1477400642 \
+      FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/clock1Hz.vhd" \
+      EN work/clock1Hz 1477400641
+FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/motor2_control.vhd" 2015/12/15.16:12:59 M.81d
+EN work/motor2_control 1477400649 \
+      FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/motor2_control.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/motor2_control/Behavioral 1477400650 \
+      FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/motor2_control.vhd" \
+      EN work/motor2_control 1477400649
+FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/motor_control.vhd" 2015/12/15.17:09:45 M.81d
+EN work/motor_control 1477400645 \
+      FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/motor_control.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/motor_control/Behavioral 1477400646 \
+      FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/motor_control.vhd" \
+      EN work/motor_control 1477400645
+FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_display.vhd" 2015/12/15.16:15:03 M.81d
+EN work/ssd_display 1477400647 \
+      FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_display.vhd" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/STD_LOGIC_UNSIGNED 1290154110 \
+      PB ieee/std_logic_arith 1290154109 PB ieee/NUMERIC_STD 1290154109
+AR work/ssd_display/Behavioral 1477400648 \
+      FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_display.vhd" \
+      EN work/ssd_display 1477400647
+FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_x.vhd" 2015/12/14.00:09:12 M.81d
+EN work/ssd_x 1477400639 \
+      FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_x.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/ssd_x/Behavioral 1477400640 \
+      FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/ssd_x.vhd" \
+      EN work/ssd_x 1477400639
+FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/temp_clock.vhd" 2015/12/14.00:09:12 M.81d
+EN work/temp_clock 1477400637 \
+      FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/temp_clock.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/temp_clock/Behavioral 1477400638 \
+      FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/temp_clock.vhd" \
+      EN work/temp_clock 1477400637
+FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/topmodule.vhd" 2015/12/15.16:18:07 M.81d
+EN work/topmodule 1477400651 \
+      FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/topmodule.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/topmodule/Behavioral 1477400652 \
+      FL "C:/Users/Yunus/Desktop/2015-2016 bilkent/2015-2016 fall/digital/proje son kodlar/projeson/topmodule.vhd" \
+      EN work/topmodule 1477400651 CP temp_clock CP ssd_x CP clock1Hz CP buzzer \
+      CP motor_control CP ssd_display CP motor2_control
+FL "C:/Users/Yunus/Desktop/proje sonk/projeson/buzzer.vhd" 2015/12/14.02:15:14 M.81d
+FL "C:/Users/Yunus/Desktop/proje sonk/projeson/clock1Hz.vhd" 2015/12/13.23:48:24 M.81d
+FL "C:/Users/Yunus/Desktop/proje sonk/projeson/motor2_control.vhd" 2015/12/15.15:12:59 M.81d
+FL "C:/Users/Yunus/Desktop/proje sonk/projeson/motor_control.vhd" 2015/12/15.15:20:27 M.81d
+FL "C:/Users/Yunus/Desktop/proje sonk/projeson/ssd_display.vhd" 2015/12/15.15:15:03 M.81d
+FL "C:/Users/Yunus/Desktop/proje sonk/projeson/ssd_x.vhd" 2015/12/13.23:09:12 M.81d
+FL "C:/Users/Yunus/Desktop/proje sonk/projeson/temp_clock.vhd" 2015/12/13.23:09:12 M.81d
+FL "C:/Users/Yunus/Desktop/proje sonk/projeson/topmodule.vhd" 2015/12/15.15:18:07 M.81d

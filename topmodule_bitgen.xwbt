@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Yunus\Desktop\2015-2016 bilkent\2015-2016 fall\digital\proje son kodlar\projeson\topmodule.ncd
+OUTFILE=C:\Users\Yunus\Desktop\2015-2016 bilkent\2015-2016 fall\digital\proje son kodlar\projeson\topmodule.bit
+FAMILY=Spartan3E
+PART=xc3s100e-5cp132
+WORKINGDIR=C:\Users\Yunus\Desktop\2015-2016 bilkent\2015-2016 fall\digital\proje son kodlar\projeson
+LICENSE=WebPack
+USER_INFO=0_0_756
